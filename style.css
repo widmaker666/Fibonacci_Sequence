@@ -1,0 +1,44 @@
+body {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fib-number {
+  text-align: center;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#fibSequenceNumbers {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#generateButton {
+  background: transparent;
+  height: 50px;
+  width: 250px;
+  border: 2px black solid;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.2s ease-in-out;
+}
+
+#generateButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
