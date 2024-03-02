@@ -1,9 +1,9 @@
 let fibonacciSequence = [0, 1];
 
 function fibonacciGenerate100() {
-  const n = 100;
+  const fibonacciLengthNumber = 100;
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < fibonacciLengthNumber; i++) {
     fibonacciSequence.push(
       fibonacciSequence[fibonacciSequence.length - 1] +
         fibonacciSequence[fibonacciSequence.length - 2]
