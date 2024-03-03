@@ -1,4 +1,5 @@
 let fibonacciSequence = [0, 1];
+const usedColors = new Set();
 
 function fibonacciGenerate100() {
   const fibonacciLengthNumber = 100;
@@ -50,9 +51,19 @@ function randomColor() {
   const hexaNumbers = "1234567890ABCDEF";
   let color = "#";
 
-  for (let i = 0; i < 6; i++) {
-    color += hexaNumbers[Math.floor(Math.random() * 16)];
+  let unique = false;
+  while (!unique) {
+    color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += hexaNumbers[Math.floor(Math.random() * 16)];
+    }
+
+    if (!usedColors.has(color)) {
+      unique = true;
+      usedColors.add(color);
+    }
   }
+
   return color;
 }
 
